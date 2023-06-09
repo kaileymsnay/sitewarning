@@ -1,0 +1,10 @@
+{% if not JXTOOLSJS %}
+	{% INCLUDEJS '@kaileymsnay_sitewarning/jxtools.js' %}
+	{% DEFINE JXTOOLSJS = true %}
+{% endif %}
+
+{% if SITE_WARNING %}
+	<li id="list_inner_hidden_container" jxdom-closest="div.wrap" jxdom-find="a.top-anchor" jxdom-action="after">
+		<div id="header_error" class="header_error">{{ SITE_WARNING }}</div>
+	</li>
+{% endif %}

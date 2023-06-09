@@ -1,0 +1,8 @@
+services:
+    _defaults:
+        autowire: true
+
+    kaileymsnay.sitewarning.listener:
+        class: kaileymsnay\sitewarning\event\main_listener
+        tags:
+            - { name: event.listener }

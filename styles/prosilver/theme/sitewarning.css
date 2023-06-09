@@ -1,0 +1,11 @@
+.header_error {
+	position: absolute;
+	font-family: arial,sans-serif;
+	font-weight: bold;
+	background: #b21b1b;
+	color: white;
+	font-size: 12px;
+	padding: 5px;
+	top: 0;
+	left: 0;
+}
